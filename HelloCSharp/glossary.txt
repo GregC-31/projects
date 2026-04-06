@@ -1,0 +1,13 @@
+Console application - an application designed to be used through a text-based user interface
+
+namespace - a container of one or multiple data structures used to prevent naming conflicts
+
+class - a reference structure that serves as a "blueprint" for creating objects
+
+method - a block of code which contains a series of statements that perform certain tasks
+
+property - a member of a class that provides a flexible mechanism to read, write, or compute a value from private field (automatically implements get and set methods)
+
+constructor - a special method which is automatically called when an object of a class is created
+
+.NET - a free, open-source, cross-platform software development platform used for building and running applications in one or more programming languages
