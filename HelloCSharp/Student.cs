@@ -42,6 +42,15 @@ namespace StudentRecords
             Name = name; // This will invoke the setter and validate the value
         }
 
+        public void EnrollInCourse(Course course)
+        {
+            if (course == null)
+                throw new ArgumentNullException(nameof(course), "Course cannot be null.");
+
+            var enrollment = new Enrollment(this, course);
+            _enrollments.Add(enrollment);
+        }
+
        
     }
 }
