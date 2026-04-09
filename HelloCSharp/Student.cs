@@ -33,6 +33,12 @@ namespace StudentRecords
             }
         }
 
+        public Student(int id, string name)
+        {
+            Id = id; // This will invoke the setter and validate the value
+            Name = name; // This will invoke the setter and validate the value
+        }
+
        
     }
 }
