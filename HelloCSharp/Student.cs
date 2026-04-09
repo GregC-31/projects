@@ -2,8 +2,8 @@ namespace StudentRecords
 {
     public class Student
     {
-        private int _id;
-        private string _name;
+        private int _id = 0; // Default value for int
+        private string _name = string.Empty; // ""
     
 
      public int Id
