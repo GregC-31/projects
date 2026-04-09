@@ -4,6 +4,7 @@ namespace StudentRecords
     {
         private int _id = 0; // Default value for int
         private string _name = string.Empty; // ""
+        private readonly List<Enrollment> _enrollments = new List<Enrollment>();
     
 
      public int Id
@@ -32,6 +33,8 @@ namespace StudentRecords
                 _name = value;
             }
         }
+
+        public IReadOnlyList<Enrollment> Enrollments => _enrollments.AsReadOnly();
 
         public Student(int id, string name)
         {
