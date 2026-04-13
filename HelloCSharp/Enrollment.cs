@@ -7,7 +7,7 @@ namespace StudentRecords
 
         public Enrollment(Student student, Course course)
         {
-            Student = student
+            Student = student;
             Course = course;
             
         }
