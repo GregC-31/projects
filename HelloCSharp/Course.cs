@@ -2,36 +2,37 @@ namespace StudentRecords
 {
     public class Course
     {
+        private string _code = string.Empty; 
+        private string _name = string.Empty; 
+        
+        public string Code
+        {
+            get => _code;
+            set
+            {
+               if (string.IsNullOrWhiteSpace(value))
+                    throw new ArgumentException("Code cannot be null or empty.");
+                
+                _code = value;
+            }
+        }
 
-         public string Name
+        public string Name
         {
             get => _name;
             set
             {
                 if (string.IsNullOrWhiteSpace(value))
                     throw new ArgumentException("Name cannot be null or empty.");
-
+                
                 _name = value;
             }
         }
 
-        public string Code
+        public Course(string code, string name)
         {
-            get => _code;
-            set
-            {
-                if (string.IsNullOrWhiteSpace(value))
-                    throw new ArgumentException("Code cannot be null or empty.");
-
-                _code = value;
-            }
+            Code = code;
+            Name = name;
         }
-
-        public Course(string Code)
-        {
-            Id = id; // This will invoke the setter and validate the value
-        
-
-       
     }
 }
