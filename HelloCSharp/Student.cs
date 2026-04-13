@@ -14,7 +14,7 @@ namespace StudentRecords
             {
                 if (value <= 0)
                 
-                    throw new ArgumentException("Id must be a positive number.");
+                    throw new ArgumentException("Id must be a positive integer value.");
                     _id = value;
                 
             }
